@@ -1,0 +1,84 @@
+#container{
+    width: 90%;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+#transition{
+    margin: 0 auto;
+    width: 23%;
+    border: 1px solid black;
+    background-color: yellow;
+    transition: width 2s, height 2s, transform 2s;
+}
+#transition:hover{
+    transform: rotate(180deg);
+}
+#square {
+    width: 150px;
+    height: 150px;
+    background: red;
+    margin: 0 auto;
+}
+
+#square:hover {
+    animation: animation 2s infinite;
+    transition-delay: 1s;
+}
+
+@keyframes animation {
+    from {
+        width: 150px;
+        height: 150px;
+        transform: rotate(0deg);
+    }
+
+    to {
+        width: 300px;
+        height: 300px;
+        transform: rotate(180deg);
+    }
+}
+#Q3{
+    
+    filter: grayscale(100%);
+    filter: blur(5px);
+    filter: opacity(30%);
+}
+#img {
+    width: 25%;
+    float: left;
+}
+
+#img figure img {
+    width: 100%;
+    height: 70%;
+}
+
+#img figcaption {
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    #img {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:800px)and (min-width:300px) {
+    #img {
+        width: 50%;
+        margin: 6px 0;
+    }
+}
+
+@media screen and (max-width:300px) {
+    #img {
+        width: 100%;
+    }
+}
+#shadow img {
+    box-shadow: 20px 20px 50px 10px rgb(80, 140, 193);
+    height: 50%;
+    width: 50%;
+}
+
